@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:id="@+id/textintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/desserts_shop"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Donut"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/donuts"
+        android:onClick="showDonutorder"
+        android:src="@drawable/donut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textintro"
+        tools:ignore="OnClick,UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/cupcake"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/cupcakes"
+        android:onClick="showCupcakeorder"
+        android:src="@drawable/cupcake_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Donut"
+        tools:ignore="OnClick,UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/icecream_roll"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/icecream_roll"
+        android:onClick="showIcecreamorder"
+        android:src="@drawable/icecream_roll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cupcake"
+        tools:ignore="OnClick,UsingOnClickInXml,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/pastry"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/pastry"
+        android:onClick="showPastryorder"
+        android:src="@drawable/pastary_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icecream_roll"
+        tools:ignore="OnClick,UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/donut_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/donuts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Donut"
+        app:layout_constraintTop_toTopOf="@+id/Donut" />
+
+    <TextView
+        android:id="@+id/cupcake_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/cupcakes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cupcake"
+        app:layout_constraintTop_toTopOf="@+id/cupcake" />
+
+    <TextView
+        android:id="@+id/icecream_roll_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/icecream_roll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/icecream_roll"
+        app:layout_constraintTop_toTopOf="@+id/icecream_roll" />
+
+    <TextView
+        android:id="@+id/pastry_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/pastry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pastry"
+        app:layout_constraintTop_toTopOf="@+id/pastry" />
+</androidx.constraintlayout.widget.ConstraintLayout>
